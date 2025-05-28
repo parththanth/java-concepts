@@ -1,22 +1,18 @@
+package recursion;
 import java.util.*;
-class Fabonacci {
-    private static Map<Integer,Integer> memo = new HashMap<>();
 
-    public static void main(String[] args){
+class Fibonacci {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        int n = sc.nextInt();
-        
+        int n = sc.nextInt(); 
+
         for (int i = 0; i < n; i++) {
             System.out.print(fib(i) + " ");
         }
     }
-    static int fib(int n){
-        if (n < 2) return n;            
-        if (memo.containsKey(n))         
-            return memo.get(n);
-        int result = fib(n-1) + fib(n-2);
-        memo.put(n, result);             
-        return result;
+
+    static int fib(int n) {
+        if (n < 2) return n;
+        return fib(n - 1) + fib(n - 2);
     }
 }
