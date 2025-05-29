@@ -1,6 +1,6 @@
 package recursion;
 import java.util.*;
-public class ltonseriseSum {
+public class nSum {
     static int nseriseSum(int n){
         if(n<=0){
            return 0;
