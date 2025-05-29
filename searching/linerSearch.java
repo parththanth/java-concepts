@@ -1,3 +1,4 @@
+package searching;
 import java.util.*;
 public class linerSearch {
     public static void main(String[] args){
