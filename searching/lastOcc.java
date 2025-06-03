@@ -27,7 +27,7 @@ public class lastOcc {
         int mid = (start + end) / 2;
 
         if ((mid == arr.length - 1 || arr[mid + 1] > target) && arr[mid] == target)
-            return mid;
+            return mid;  
         else if (arr[mid] > target)
             return lastOccurrence(arr, start, mid - 1, target);
         else
