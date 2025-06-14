@@ -26,6 +26,6 @@ public class tree {
         tree.root.right = new Node(30);
         System.out.println("\nBinary Tree");
         tree.travels(tree.root);
-        
+
     }
 }
